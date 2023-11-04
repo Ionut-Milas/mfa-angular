@@ -15,7 +15,7 @@
       "prefix": "common",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/common",
             "index": "projects/common/src/index.html",
@@ -32,7 +32,10 @@
             "styles": [
               "projects/common/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "projects/common/webpack.config.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -48,7 +51,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "customWebpackConfig": {
+                "path": "projects/common/webpack.config.prod.ts"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -62,7 +68,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "common:build:production"
@@ -113,7 +119,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/main",
             "index": "projects/main/src/index.html",
@@ -130,7 +136,10 @@
             "styles": [
               "projects/main/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "projects/main/webpack.config.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -146,7 +155,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "customWebpackConfig": {
+                "path": "projects/main/webpack.config.prod.ts"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -160,7 +172,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "main:build:production"
@@ -211,7 +223,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/users",
             "index": "projects/users/src/index.html",
@@ -228,7 +240,10 @@
             "styles": [
               "projects/users/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "projects/users/webpack.config.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -244,7 +259,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "customWebpackConfig": {
+                "path": "projects/users/webpack.config.prod.ts"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -258,7 +276,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "users:build:production"
@@ -309,7 +327,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/rentals",
             "index": "projects/rentals/src/index.html",
@@ -326,7 +344,10 @@
             "styles": [
               "projects/rentals/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "customWebpackConfig": {
+              "path": "projects/rentals/webpack.config.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -342,7 +363,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "customWebpackConfig": {
+                "path": "projects/app3-rentals/webpack.config.prod.ts"
+              }
             },
             "development": {
               "buildOptimizer": false,
@@ -356,7 +380,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "rentals:build:production"
