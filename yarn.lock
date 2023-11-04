@@ -10,7 +10,20 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@angular-devkit/architect@0.1602.9":
+"@angular-builders/custom-webpack@^16.0.1":
+  version "16.0.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@angular-builders/custom-webpack/-/custom-webpack-16.0.1.tgz#a3af6cde72b629244c89ea3f88c2946782431175"
+  integrity sha1-o69s3nK2KSRMieo/iMKUZ4JDEXU=
+  dependencies:
+    "@angular-devkit/architect" ">=0.1600.0 < 0.1700.0"
+    "@angular-devkit/build-angular" "^16.0.0"
+    "@angular-devkit/core" "^16.0.0"
+    lodash "^4.17.15"
+    ts-node "^10.0.0"
+    tsconfig-paths "^4.1.0"
+    webpack-merge "^5.7.3"
+
+"@angular-devkit/architect@0.1602.9", "@angular-devkit/architect@>=0.1600.0 < 0.1700.0":
   version "0.1602.9"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@angular-devkit/architect/-/architect-0.1602.9.tgz#37a3f558c244abff815decf134b10a976104f47d"
   integrity sha1-N6P1WMJEq/+BXezxNLEKl2EE9H0=
@@ -18,7 +31,7 @@
     "@angular-devkit/core" "16.2.9"
     rxjs "7.8.1"
 
-"@angular-devkit/build-angular@^16.2.9":
+"@angular-devkit/build-angular@^16.0.0", "@angular-devkit/build-angular@^16.2.9":
   version "16.2.9"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@angular-devkit/build-angular/-/build-angular-16.2.9.tgz#bc81c385b590d63b5174cc010adcda58d39f9939"
   integrity sha1-vIHDhbWQ1jtRdMwBCtzaWNOfmTk=
@@ -98,7 +111,7 @@
     "@angular-devkit/architect" "0.1602.9"
     rxjs "7.8.1"
 
-"@angular-devkit/core@16.2.9":
+"@angular-devkit/core@16.2.9", "@angular-devkit/core@^16.0.0":
   version "16.2.9"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@angular-devkit/core/-/core-16.2.9.tgz#81c5c95de8c423634bf93f616683045c6cdd4dd0"
   integrity sha1-gcXJXejEI2NL+T9hZoMEXGzdTdA=
@@ -1228,6 +1241,13 @@
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha1-u1BFecHK6SPmV2pPXaQ9Jfl729k=
 
+"@cspotcode/source-map-support@^0.8.0":
+  version "0.8.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
+  integrity sha1-AGKcNaaI4FqIsc2mhPudXnPwAKE=
+  dependencies:
+    "@jridgewell/trace-mapping" "0.3.9"
+
 "@discoveryjs/json-ext@0.5.7":
   version "0.5.7"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -1495,7 +1515,7 @@
     "@jridgewell/sourcemap-codec" "^1.4.10"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@jridgewell/resolve-uri@^3.1.0":
+"@jridgewell/resolve-uri@^3.0.3", "@jridgewell/resolve-uri@^3.1.0":
   version "3.1.1"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@jridgewell/resolve-uri/-/resolve-uri-3.1.1.tgz#c08679063f279615a3326583ba3a90d1d82cc721"
   integrity sha1-wIZ5Bj8nlhWjMmWDujqQ0dgsxyE=
@@ -1517,6 +1537,14 @@
   version "1.4.15"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha1-18bmdVx4VnqVHgSrUu8P0m3lnzI=
+
+"@jridgewell/trace-mapping@0.3.9":
+  version "0.3.9"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@jridgewell/trace-mapping/-/trace-mapping-0.3.9.tgz#6534fd5933a53ba7cbf3a17615e273a0d1273ff9"
+  integrity sha1-ZTT9WTOlO6fL86F2FeJzoNEnP/k=
+  dependencies:
+    "@jridgewell/resolve-uri" "^3.0.3"
+    "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@jridgewell/trace-mapping@^0.3.17", "@jridgewell/trace-mapping@^0.3.9":
   version "0.3.20"
@@ -1682,6 +1710,26 @@
   version "2.0.0"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha1-9UShSNOrNYAcH2M6dEH9h8LkhL8=
+
+"@tsconfig/node10@^1.0.7":
+  version "1.0.9"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
+  integrity sha1-30kH/AeohpImN7FeAtTOvEwAIbI=
+
+"@tsconfig/node12@^1.0.7":
+  version "1.0.11"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@tsconfig/node12/-/node12-1.0.11.tgz#ee3def1f27d9ed66dac6e46a295cffb0152e058d"
+  integrity sha1-7j3vHyfZ7WbaxuRqKVz/sBUuBY0=
+
+"@tsconfig/node14@^1.0.0":
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@tsconfig/node14/-/node14-1.0.3.tgz#e4386316284f00b98435bf40f72f75a09dabf6c1"
+  integrity sha1-5DhjFihPALmENb9A9y91oJ2r9sE=
+
+"@tsconfig/node16@^1.0.2":
+  version "1.0.4"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
+  integrity sha1-C5LcwMwcgfbzBqOB8o4xsaVlNuk=
 
 "@tufjs/canonical-json@1.0.0":
   version "1.0.0"
@@ -2065,12 +2113,17 @@ acorn-walk@^7.1.1:
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/acorn-walk/-/acorn-walk-7.2.0.tgz#0de889a601203909b0fbe07b8938dc21d2e967bc"
   integrity sha1-DeiJpgEgOQmw++B7iTjcIdLpZ7w=
 
+acorn-walk@^8.1.1:
+  version "8.3.0"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/acorn-walk/-/acorn-walk-8.3.0.tgz#2097665af50fd0cf7a2dfccd2b9368964e66540f"
+  integrity sha1-IJdmWvUP0M96LfzNK5Nolk5mVA8=
+
 acorn@^7.1.1:
   version "7.4.1"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=
 
-acorn@^8.2.4, acorn@^8.7.1, acorn@^8.8.2:
+acorn@^8.2.4, acorn@^8.4.1, acorn@^8.7.1, acorn@^8.8.2:
   version "8.11.2"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/acorn/-/acorn-8.11.2.tgz#ca0d78b51895be5390a5903c5b3bdcdaf78ae40b"
   integrity sha1-yg14tRiVvlOQpZA8Wzvc2veK5As=
@@ -2210,6 +2263,11 @@ are-we-there-yet@^3.0.0:
   dependencies:
     delegates "^1.0.0"
     readable-stream "^3.6.0"
+
+arg@^4.1.0:
+  version "4.1.3"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/arg/-/arg-4.1.3.tgz#269fc7ad5b8e42cb63c896d5666017261c144089"
+  integrity sha1-Jp/HrVuOQstjyJbVZmAXJhwUQIk=
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -2814,6 +2872,11 @@ cosmiconfig@^8.2.0:
     parse-json "^5.2.0"
     path-type "^4.0.0"
 
+create-require@^1.1.0:
+  version "1.1.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
+  integrity sha1-wdfo8eX2z8n/ZfnNNS03NIdWwzM=
+
 critters@0.0.20:
   version "0.0.20"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/critters/-/critters-0.0.20.tgz#08ddb961550ab7b3a59370537e4f01df208f7646"
@@ -3002,6 +3065,11 @@ di@^0.0.1:
   version "0.0.1"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/di/-/di-0.0.1.tgz#806649326ceaa7caa3306d75d985ea2748ba913c"
   integrity sha1-gGZJMmzqp8qjMG112YXqJ0i6kTw=
+
+diff@^4.0.1:
+  version "4.0.2"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
+  integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -3490,6 +3558,11 @@ find-up@^6.3.0:
   dependencies:
     locate-path "^7.1.0"
     path-exists "^5.0.0"
+
+flat@^5.0.2:
+  version "5.0.2"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/flat/-/flat-5.0.2.tgz#8ca6fe332069ffa9d324c327198c598259ceb241"
+  integrity sha1-jKb+MyBp/6nTJMMnGYxZglnOskE=
 
 flatted@^3.2.7:
   version "3.2.9"
@@ -4482,7 +4555,7 @@ lodash.debounce@^4.0.8:
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
-lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.15, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
@@ -4551,6 +4624,11 @@ make-dir@^4.0.0:
   integrity sha1-w8IwencSd82WODBfkVwprnQbYU4=
   dependencies:
     semver "^7.5.3"
+
+make-error@^1.1.1:
+  version "1.3.6"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/make-error/-/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
+  integrity sha1-LrLjfqm2fEiR9oShOUeZr0hM96I=
 
 make-fetch-happen@^10.0.3:
   version "10.2.1"
@@ -6150,6 +6228,11 @@ strip-ansi@^7.0.1:
   dependencies:
     ansi-regex "^6.0.1"
 
+strip-bom@^3.0.0:
+  version "3.0.0"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+  integrity sha1-IzTBjpx1n3vdVv3vfprj1YjmjtM=
+
 strip-final-newline@^2.0.0:
   version "2.0.0"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
@@ -6316,6 +6399,34 @@ tree-kill@1.2.2, tree-kill@^1.2.2:
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha1-TKCakJLIi3OnzcXooBtQeweQoMw=
 
+ts-node@^10.0.0:
+  version "10.9.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  integrity sha1-5z3pEClYr54fCxaKb/Mg4lrc/0s=
+  dependencies:
+    "@cspotcode/source-map-support" "^0.8.0"
+    "@tsconfig/node10" "^1.0.7"
+    "@tsconfig/node12" "^1.0.7"
+    "@tsconfig/node14" "^1.0.0"
+    "@tsconfig/node16" "^1.0.2"
+    acorn "^8.4.1"
+    acorn-walk "^8.1.1"
+    arg "^4.1.0"
+    create-require "^1.1.0"
+    diff "^4.0.1"
+    make-error "^1.1.1"
+    v8-compile-cache-lib "^3.0.1"
+    yn "3.1.1"
+
+tsconfig-paths@^4.1.0:
+  version "4.2.0"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/tsconfig-paths/-/tsconfig-paths-4.2.0.tgz#ef78e19039133446d244beac0fd6a1632e2d107c"
+  integrity sha1-73jhkDkTNEbSRL6sD9ahYy4tEHw=
+  dependencies:
+    json5 "^2.2.2"
+    minimist "^1.2.6"
+    strip-bom "^3.0.0"
+
 tslib@2.6.1:
   version "2.6.1"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
@@ -6472,6 +6583,11 @@ uuid@^8.3.2:
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
+v8-compile-cache-lib@^3.0.1:
+  version "3.0.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz#6336e8d71965cb3d35a1bbb7868445a7c05264bf"
+  integrity sha1-Yzbo1xllyz01obu3hoRFp8BSZL8=
+
 validate-npm-package-license@^3.0.4:
   version "3.0.4"
   resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -6618,6 +6734,15 @@ webpack-merge@5.9.0:
   integrity sha1-3BYKHEz1Es7KUVzCMWaendsTOCY=
   dependencies:
     clone-deep "^4.0.1"
+    wildcard "^2.0.0"
+
+webpack-merge@^5.7.3:
+  version "5.10.0"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/webpack-merge/-/webpack-merge-5.10.0.tgz#a3ad5d773241e9c682803abf628d4cd62b8a4177"
+  integrity sha1-o61ddzJB6caCgDq/Yo1M1iuKQXc=
+  dependencies:
+    clone-deep "^4.0.1"
+    flat "^5.0.2"
     wildcard "^2.0.0"
 
 webpack-sources@^3.0.0, webpack-sources@^3.2.3:
@@ -6828,6 +6953,11 @@ yargs@^16.1.1:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+yn@3.1.1:
+  version "3.1.1"
+  resolved "https://pkgs.dev.azure.com/Securrency/Securrency/_packaging/Secur/npm/registry/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
+  integrity sha1-HodAGgnXZ8HV6rJqbkwYUYLS61A=
 
 yocto-queue@^1.0.0:
   version "1.0.0"
