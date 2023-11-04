@@ -12,7 +12,7 @@
     "start:common": "ng serve common",
     "build:common": "ng build common",
     "watch": "ng build --watch --configuration development",
-    "start:all": "npm run start:users & npm run start:rentals & npm run start:common",
+    "start:all": " concurrently \"yarn run start:users\" \"yarn run start:rentals\" \"yarn run start:common\" \"yarn run start\"",
     "test": "ng test"
   },
   "private": true,
@@ -25,6 +25,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "concurrently": "^8.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
