@@ -12,7 +12,7 @@
       },
       "root": "projects/common",
       "sourceRoot": "projects/common/src",
-      "prefix": "app",
+      "prefix": "common",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -68,7 +68,8 @@
               "browserTarget": "common:build:production"
             },
             "development": {
-              "browserTarget": "common:build:development"
+              "browserTarget": "common:build:development",
+              "port": 4203
             }
           },
           "defaultConfiguration": "development"
@@ -165,7 +166,8 @@
               "browserTarget": "main:build:production"
             },
             "development": {
-              "browserTarget": "main:build:development"
+              "browserTarget": "main:build:development",
+              "port": 4200
             }
           },
           "defaultConfiguration": "development"
@@ -262,7 +264,8 @@
               "browserTarget": "users:build:production"
             },
             "development": {
-              "browserTarget": "users:build:development"
+              "browserTarget": "users:build:development",
+              "port": 4201
             }
           },
           "defaultConfiguration": "development"
@@ -359,7 +362,8 @@
               "browserTarget": "rentals:build:production"
             },
             "development": {
-              "browserTarget": "rentals:build:development"
+              "browserTarget": "rentals:build:development",
+              "port": 4202
             }
           },
           "defaultConfiguration": "development"
